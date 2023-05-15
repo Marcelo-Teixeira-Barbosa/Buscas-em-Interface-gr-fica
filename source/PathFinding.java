@@ -560,7 +560,7 @@ public class PathFinding {
 				} else {
 					priority.remove(0);
 				}
-				sortQue(priority);	//SORT THE PRIORITY QUE
+				//sortQue(priority);	//SORT THE PRIORITY QUE
 			}
 		}
 
@@ -576,14 +576,14 @@ public class PathFinding {
 				int hops = priority.get(0).getHops()+1;
 				ArrayList<Node> explored = exploreNeighbors(priority.get(0),hops);
 				if(explored.size() > 0) {
-					priority.remove(0);
+					priority.remove(priority.size()-1);
 					priority.addAll(explored);
 					Update();
 					delay();
 				} else {
-					priority.remove(0);
+					priority.remove(priority.size()-1);
 				}
-				sortQue(priority);	//SORT THE PRIORITY QUE
+				//sortQue(priority);	//SORT THE PRIORITY QUE
 			}
 		}
 
