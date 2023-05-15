@@ -608,6 +608,8 @@ public class PathFinding {
 				sortCost(priority);	//SORT THE PRIORITY QUE
 			}
 		}
+//asdsdaasd
+
 
 		public void BME() {
 			ArrayList<Node> priority = new ArrayList<Node>();
